@@ -23,7 +23,7 @@ psutil
 psycopg2-binary
 pynewtonmath
 pyrate-limiter
-python-telegram-bot
+python-telegram-bot==13.11
 regex
 requests
 spamwatch
