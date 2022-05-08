@@ -71,32 +71,39 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+GROUP_START_IMG = "https://telegra.ph/file/ace3cc2757f843ff71330.jpg"
+
 PM_START_TEXT = """
-❂ ɪ ᴀᴍ ɴᴏʙᴀʀᴀ ᴀ ᴊᴜᴊᴜᴛꜱᴜ ᴡɪᴢᴀʀᴅ ꜱᴏʀᴄᴇʀᴇʀ ❂
---------------------------------------
-𝘼 𝙛𝙡𝙚𝙭𝙞𝙗𝙡𝙚 𝙖𝙣𝙙 𝙈𝙪𝙡𝙩𝙞 𝙁𝙚𝙖𝙩𝙪𝙧𝙚𝙙 𝙂𝙧𝙤𝙪𝙥 𝙈𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩 𝘽𝙤𝙩
---------------------------------------
-ᴄʟɪᴄᴋ ᴏɴ /HELP ᴛᴏ ᴋɴᴏᴡ ᴍʏ ꜱᴋɪʟʟꜱ...
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ @AogiriNetwork[.](https://telegra.ph/file/1f054a1f6e857f6c4428d.jpg)
+*ᴋᴏɴɪᴄʜɪᴡᴀ! {}!*
+۞ ɪᴍ ᴋʏᴏᴜᴋᴏ ʜᴏʀɪ ᴀɴ ᴀɴɪᴍᴇ ʙᴀꜱᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. [👋](https://telegra.ph/file/ace3cc2757f843ff71330.jpg)
+───────────────────────
+× *Aʟɪᴠᴇ Sɪɴᴄᴇ:* {}
+× {} *Wᴇᴇʙꜱ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ*
+───────────────────────
+۞ ɪᴍ ʜᴇʀᴇ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢᴄ ᴍᴏʀᴇ ᴇꜰꜰɪᴄɪᴇɴᴛʟʏ!
 """
 
+buttons = [
+    [
+        InlineKeyboardButton(
+            text="【Aᴅᴅ Kʏᴏᴜᴋᴏ Tᴏ Yᴏᴜʀ GC】",
+            url="https://t.me/kyoukohori_robot?startgroup=new",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="【HELP】", callback_data="help_back"),
+        InlineKeyboardButton(text="【Support】", url="https://t.me/HoriSupport"),
+    ],
+]
+
 HELP_STRINGS = """
-ʜᴇʏ ᴛʜᴇʀᴇ, ɪ'ᴍ ɴᴏʙᴀʀᴀ ᴋᴜɢɪꜱᴀᴋɪ!
-ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ꜰᴜɴᴄᴛɪᴏɴᴀʟ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ɪ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛꜱ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+[Click on the buttons bellow to get description of hori's commands!](https://telegra.ph/file/d42a65f5391b9ca926375.mp4)"""
 
-ʜᴇʟᴘꜰᴜʟ ᴄᴏᴍᴍᴀɴᴅꜱ:
-- /ꜱᴛᴀʀᴛ: ꜱᴛᴀʀᴛꜱ ᴍᴇ! ʏᴏᴜ'ᴠᴇ ᴘʀᴏʙᴀʙʟʏ ᴀʟʀᴇᴀᴅʏ ᴜꜱᴇᴅ ᴛʜɪꜱ.
-- /ʜᴇʟᴘ: ꜱᴇɴᴅꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ; ɪ'ʟʟ ᴛᴇʟʟ ʏᴏᴜ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍʏꜱᴇʟꜰ!
-- /ᴅᴏɴᴀᴛᴇ: ɢɪᴠᴇꜱ ʏᴏᴜ ɪɴꜰᴏ ᴏɴ ʜᴏᴡ ᴛᴏ ꜱᴜᴘᴘᴏʀᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ᴄʀᴇᴀᴛᴏʀ.
 
-ᴊᴏɪɴ ᴍʏ ꜱᴜᴘᴘᴏʀᴛ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇʀɪᴇꜱ: @NobaraSupport
-
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ: / !
-ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴛʜᴇ ᴍᴏᴅᴜʟᴇꜱ:
-""".format(
-    dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
-)
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project by contacting voidxtoxic \
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 EREN_IMG = "https://telegra.ph/file/8ab770904946c033f114e.jpg"
 
