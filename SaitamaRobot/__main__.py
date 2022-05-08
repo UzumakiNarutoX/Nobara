@@ -6,12 +6,12 @@ import time
 import re
 import sys
 import traceback
-import horisan.modules.sql.users_sql as sql
+import SaitamaRobot.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from horisan import (
+from SaitamaRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
