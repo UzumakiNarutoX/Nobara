@@ -66,6 +66,7 @@ if ENV:
     
     
     INFOPIC = bool(os.environ.get("INFOPIC", False))
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
